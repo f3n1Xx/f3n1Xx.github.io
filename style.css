@@ -34,6 +34,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.ch{
+  list-style:none;
+}
+
 .fly-in-text{
   list-style:none;
 }
