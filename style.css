@@ -34,8 +34,16 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.ch{
+.social ul{
+
+  text-align: right;
+}
+
+.ch li {
   list-style:none;
+  display:inline-block;
+  font-size:1em;
+  color: #8124D0;
 }
 
 .fly-in-text{
