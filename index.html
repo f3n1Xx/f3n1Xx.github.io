@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content='ie=edge'>
+
+  <title> Λ Я K </title>
+  <link rel="stylesheet" href="style.css">
+  <script src = "https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+  <div class = "wrapper">
+    <h1> Hello World! </h1>
+    <h3> Site is Under Construction</h3>
+    <div class = "social">
+      <ul class = "icons">
+        <a href = "#"><li>Twitter</li></a>
+        <a href = "#"><li>LinkedIn</li></a>
+      </ul>
+    </div>
+  </div>
+  <div class="welcome-section content-hidden">
+    <div class = "content-wrap">
+      <ul class = "fly-in-text">
+        <li>f</li>
+        <li>3</li>
+        <li>n</li>
+        <li>1</li>
+        <li>X</li>
+        <li>x</li>
+      </ul>
+      <a href="#" class="enter-button">ENTER</a>
+    </div>
+  </div>
+  <script type = "text/javascript">
+
+
+  $(function(){
+    var welcomeSection = $('.welcome-section'),
+        enterButton = welcomeSection.find('.enter-button');
+
+        setTimeout(function(){
+          welcomeSection.removeClass('content-hidden');
+        }, 800);
+
+        enterButton.on('click', function(e){
+          e.preventDefault();
+          welcomeSection.addClass('content-hidden').fadeOut();
+  });
+});
+
+  </script>
+</body>
+</html>
